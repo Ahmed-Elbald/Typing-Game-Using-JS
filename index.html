@@ -1,0 +1,47 @@
+<!--
+  Title
+  level + seconds
+  start button
+  typing area
+  list of words
+  time left + score 0 from number
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="game-header">typing game</h1>
+    <div class="level-choosing">
+      <p>choose your level</p>
+      <button data-level="easy">easy</button>
+      <button data-level="normal">normal</button>
+      <button data-level="hard">hard</button>
+    </div>
+    <p class="level-par">
+      level : <span class="level">not defined yet</span>. you have <span class="seconds">0</span> seconds to type the
+      word.
+    </p>
+    <button class="start-btn">start</button>
+    <input type="text" name="text" id="input" placeholder="Type The Word Here (Not Capitalized)">
+    <div class="word-to-write">word to write : <span></span></div>
+    <div class="words-container"></div>
+    <div class="stat">
+      <span class="time-left">time left : <span></span></span>
+      <span class="score"><span class="words-passed">0</span> from <span class="words-number"></span></span>
+    </div>
+    <div class="final-score"></div>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>

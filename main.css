@@ -1,0 +1,110 @@
+:root {
+  --main-color: aquamarine;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  color: var(--main-color);
+  text-transform: capitalize;
+  font-family: sans-serif;
+}
+
+button {
+  display: block;
+  padding: 1em 2em;
+  color: white;
+  background-color: var(--main-color);
+  margin: 1em auto;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  text-transform: capitalize;
+}
+
+.container {
+  padding: 1em;
+  background-color: black;
+  margin: 5em auto;
+  max-width: 90%;
+}
+
+.container > h1 {
+  text-align: center;
+}
+
+.container > .level-choosing {
+  margin: .5em 0;
+}
+
+.container > .level-choosing > button {
+  display: inline;
+  padding: .5em 1em;
+  margin-right: .5em;
+}
+
+.container > #input {
+  width: 100%;
+  border: none;
+  padding: 1em;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.container > #input:focus {
+  outline: none;
+}
+
+.container .word-to-write {
+  margin-top: 1em;
+}
+
+.container .word-to-write > span {
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+.container > .words-container {
+  margin: 1em 0;
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.container > .words-container > span {
+  background-color: var(--main-color);
+  color: white;
+  padding: .5em;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  user-select: none;
+  transition-duration: .3s;
+}
+
+
+.container > .stat {
+  display: flex;
+  justify-content: space-between;
+  padding: .5em;
+}
+
+.container > .final-score {
+  text-align: center;
+}
